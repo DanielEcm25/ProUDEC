@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Panel izquierdo */
+.left-panel {
+    flex: 1;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.university-logo {
+    margin-bottom: 25px;
+}
+
+.university-logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Caja de login */
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.login-box h1 {
+    color: #1d8a4c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-box p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1d8a4c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #15713b;
+}
+
+.register-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-text a {
+    color: #1d8a4c;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* Panel derecho */
+.right-panel {
+    flex: 1;
+    background: linear-gradient(180deg, #0a5c2a, #1d8a4c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-logo img {
+    width: 220px;
+    height: auto;
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .right-panel {
+        height: 200px;
+    }
+
+    .project-logo img {
+        width: 150px;
+    }
+}
